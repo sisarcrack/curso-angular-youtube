@@ -8,7 +8,10 @@ import { ServicioFamiliarService } from '../servicio-familiar.service';
 })
 export class PadreComponent implements OnInit {
   nombre?: string;
-
+  fecha?: Date = new Date();
+  dolar?: number = 1000.5;
+  pi?: number = Math.PI;
+  factor?: number = 0.5;
   constructor(private _servicioFamiliar: ServicioFamiliarService) {}
 
   ngOnInit(): void {
